@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宇宙おとめ座超銀河団局所銀河群銀河系太陽系地球日本国東京都北区滝野川紅葉中学校 R62年1中考査</title>
+</head>
+<body>
+    <p>国語</p>
+    <input type="number" id="Ji">
+    <p type = "number" id="Jo">0</p>
+    <p>数学</p>
+    <input type="number" id="Mi">
+    <p id="Mo">0</p>
+    <p>英語</p>
+    <input type="number" id="Ei">
+    <p id="Eo">0</p>
+    <p>社会</p>
+    <input type="number" id="Ci">
+    <p id="Co">0</p>
+    <p>理科</p>
+    <input type="number" id="Si">
+    <p id="So">0</p>
+    <p>5計平均</p>
+    <input type="number" id="Ai">
+    <p id="Ao"></p>
+    
+    <script>
+     let Jo = document.getElementById("Jo");
+     let Ji = document.getElementById("Ji");
+     let Mo = document.getElementById("Mo");
+     let Mi = document.getElementById("Mi");
+     let Eo = document.getElementById("Eo");
+     let Ei = document.getElementById("Ei");
+     let Co = document.getElementById("Co");
+     let Ci = document.getElementById("Ci");
+     let So = document.getElementById("So");
+     let Si = document.getElementById("Si");
+     let Ao = document.getElementById("Ao");
+     let Ai = document.getElementById("Ai");
+     function Cal(){
+        Jo = document.getElementById("Jo");
+        Ji = document.getElementById("Ji");
+        Mo = document.getElementById("Mo");
+        Mi = document.getElementById("Mi");
+        Eo = document.getElementById("Eo");
+        Ei = document.getElementById("Ei");
+        Co = document.getElementById("Co");
+        Ci = document.getElementById("Ci");
+        So = document.getElementById("So");
+        Si = document.getElementById("Si");
+        Ao = document.getElementById("Ao");
+        Ai = document.getElementById("Ai");
+        Jo.textContent = Math.round((((Ji.value - 64.3)  / 19.437) + 50) * 100)/100;
+        Mo.textContent = Math.round((((Mi.value - 61.1)  / 24.448) + 50) * 100)/100;
+        Eo.textContent = Math.round((((Ei.value - 57.3)  / 20.416) + 50) * 100)/100;
+        Co.textContent=  Math.round((((Ci.value - 55.8)  / 16.561) + 50) * 100)/100;
+        So.textContent = Math.round((((Si.value - 67.8)  / 21.768) + 50) *100)/100;
+        Ao.textContent = Math.round((((Ai.value - 306.3 / 5)/ 18.923 )+ 50)  * 1000 )/1000 ;
+     }
+
+    </script>
+    <input value="いざ、計算！" type="button" onclick="Cal()"></input>
+</body>
+</html>
